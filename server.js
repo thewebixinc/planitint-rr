@@ -34,6 +34,7 @@ Nom: ${lead.firstName || lead.first_name || ""} ${lead.lastName || lead.last_nam
 Email: ${lead.email || ""}
 Téléphone: ${lead.phone || lead.phoneNumber || lead.phone_number || ""}
 Service demandé: ${lead.service || lead.serviceName || lead.service_name || lead.customData?.service || ""}
+Délai: ${lead.delai || lead.customData?.delai || ""}
 Message: ${lead.message || lead.description || ""}
         `.trim()
       }
